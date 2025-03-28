@@ -1,4 +1,4 @@
-package src.desafios;
+package src.bigO;
 
 public class kthFactor {
 

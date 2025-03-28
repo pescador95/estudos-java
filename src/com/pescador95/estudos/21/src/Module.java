@@ -11,7 +11,6 @@ public class Module {
     static void module(Integer time) {
 
 
-
         Integer hours = time / ONE_HOUR_IN_MINUTE;
         Integer minutes = time % ONE_HOUR_IN_MINUTE;
 

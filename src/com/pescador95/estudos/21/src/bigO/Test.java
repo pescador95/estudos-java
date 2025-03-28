@@ -1,7 +1,5 @@
-package src.desafios;
+package src.bigO;
 
-
-import java.util.UUID;
 
 public class Test {
 
@@ -75,7 +73,7 @@ class Increment {
     volatile long count;
 
     public void increment() {
-        synchronized(this) {
+        synchronized (this) {
             count++;
         }
     }

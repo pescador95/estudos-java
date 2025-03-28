@@ -1,4 +1,4 @@
-package src.desafios;
+package src.bigO;
 
 public class TreeNode {
 
@@ -25,12 +25,12 @@ public class TreeNode {
     public static void main(String... args) {
 
 
-      TreeNode root = old();
-      TreeNode rootx = newest();
+        TreeNode root = old();
+        TreeNode rootx = newest();
 
 
-      execute(root);
-      execute(rootx);
+        execute(root);
+        execute(rootx);
     }
 
     public static void execute(TreeNode root) {

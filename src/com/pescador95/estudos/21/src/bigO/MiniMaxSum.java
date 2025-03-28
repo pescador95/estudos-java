@@ -1,10 +1,9 @@
-package src.desafios;
+package src.bigO;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
 import java.util.stream.LongStream;
 
 class MiniMaxSum {
@@ -33,8 +32,8 @@ class MiniMaxSum {
         Collections.sort(arr);
         Long min, max;
 
-        min = LongStream.range(0, 4).map(i -> arr.get((int)i)).sum();
-        max = LongStream.range(1, 5).map(i -> arr.get((int)i)).sum();
+        min = LongStream.range(0, 4).map(i -> arr.get((int) i)).sum();
+        max = LongStream.range(1, 5).map(i -> arr.get((int) i)).sum();
 
         System.out.print(min + " " + max);
     }

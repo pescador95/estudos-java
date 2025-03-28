@@ -1,6 +1,4 @@
-package src.desafios;
-
-import src.bigO.FactorialRecursive;
+package src.bigO;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -54,6 +52,7 @@ public class Combinacoes {
             }
         }
     }
+
     public static int[] gerarVetorAleatorio(int tamanho, int minimo, int maximo) {
         if (tamanho <= 0 || maximo - minimo + 1 < tamanho) {
             throw new IllegalArgumentException("Parâmetros inválidos.");

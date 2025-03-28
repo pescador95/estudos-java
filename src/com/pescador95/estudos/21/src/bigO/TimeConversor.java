@@ -1,4 +1,4 @@
-package src.desafios;
+package src.bigO;
 
 public class TimeConversor {
 
@@ -30,6 +30,6 @@ public class TimeConversor {
                 hour -= 12;
             }
         }
-            return String.format("%02d:%s:%s", hour, time[1], time[2]);
+        return String.format("%02d:%s:%s", hour, time[1], time[2]);
     }
 }

@@ -15,7 +15,7 @@ public class LinearTime {
     //        Space complexity: o(1)
     public static void executeLinearTime(int[] numbers) {
 
-         linearTime(numbers);
+        linearTime(numbers);
     }
 
 

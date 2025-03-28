@@ -14,15 +14,15 @@ public class QuadraticTime {
 
     //        Time complexity: o(n²)
     //        Space complexity: o(1)
-    public static void execute(int[] numbers, int target ) {
+    public static void execute(int[] numbers, int target) {
 
         System.out.println(findPair(numbers, target));
     }
 
     public static boolean findPair(int[] numbers, int target) {
 
-        for (int i = 0; i< numbers.length; i++) {
-            for (int j = i +1 ; j < numbers.length; j++) {
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = i + 1; j < numbers.length; j++) {
                 if (numbers[i] * numbers[j] == target) {
                     return true;
                 }

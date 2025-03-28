@@ -1,13 +1,12 @@
-package src.desafios;
+package src.bigO;
 
 import java.util.Objects;
 import java.util.UUID;
 
 public class Singleton {
 
-    private UUID id;
-
     private static Singleton INSTANCE;
+    private UUID id;
 
     private Singleton() {
         this.id = UUID.randomUUID();
@@ -18,6 +17,14 @@ public class Singleton {
             INSTANCE = new Singleton();
         }
         return INSTANCE;
+    }
+
+    public static void main(String[] args) {
+        Singleton instanceOne = Singleton.getInstance();
+        Singleton instanceTow = Singleton.getInstance();
+        System.out.println(instanceOne.equals(instanceTow));
+        System.out.println(instanceOne.getId());
+        System.out.println(instanceTow.getId());
     }
 
     public void print() {
@@ -39,13 +46,5 @@ public class Singleton {
     @Override
     public int hashCode() {
         return Objects.hashCode(id);
-    }
-
-    public static void main(String[] args) {
-        Singleton instanceOne = Singleton.getInstance();
-        Singleton instanceTow = Singleton.getInstance();
-        System.out.println(instanceOne.equals(instanceTow));
-        System.out.println(instanceOne.getId());
-        System.out.println(instanceTow.getId());
     }
 }

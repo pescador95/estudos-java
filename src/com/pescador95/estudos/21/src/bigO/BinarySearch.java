@@ -9,7 +9,7 @@ public class BinarySearch {
         int[] numbers = new int[]{1, 3, 5, 7, 9, 11, 13, 15, 17, 19};
         int targetNumber = 15;
 
-       execute(numbers, targetNumber);
+        execute(numbers, targetNumber);
 
     }
 

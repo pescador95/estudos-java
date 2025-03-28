@@ -1,9 +1,8 @@
-package src.desafios;
+package src.bigO;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-
 import java.util.stream.Collectors;
 
 public class Employee {
@@ -26,56 +25,6 @@ public class Employee {
         this.id = builder.id;
         this.name = builder.name;
         this.salary = builder.salary;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public Double getSalary() {
-        return salary;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setSalary(Double salary) {
-        this.salary = salary;
-    }
-
-    static class EmployeeBuilder {
-
-        private Integer id;
-        private String name;
-        private Double salary;
-
-        public EmployeeBuilder withId(Integer id) {
-            this.id = id;
-            return this;
-        }
-
-        public EmployeeBuilder withName(String name) {
-            this.name = name;
-            return this;
-        }
-
-        public EmployeeBuilder withSalary(Double salary) {
-            this.salary = salary;
-            return this;
-        }
-
-        public Employee build() {
-            return new Employee(this);
-        }
     }
 
     public static List<Employee> employess() {
@@ -126,12 +75,62 @@ public class Employee {
 
 
         List<Employee> emp3 = employees.stream().filter(emp ->
-            emp.getSalary() > 2000.0D).collect(Collectors.toList());
+                emp.getSalary() > 2000.0D).collect(Collectors.toList());
 
         Double max = employees.stream().map(Employee::getSalary).reduce(Double.MIN_VALUE, Double::sum);
         Double min = employees.stream().map(Employee::getSalary).reduce(Double.MAX_VALUE, Double::min);
         System.out.println(max);
         System.out.println(employeeHighestSalary.getName());
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(Double salary) {
+        this.salary = salary;
+    }
+
+    static class EmployeeBuilder {
+
+        private Integer id;
+        private String name;
+        private Double salary;
+
+        public EmployeeBuilder withId(Integer id) {
+            this.id = id;
+            return this;
+        }
+
+        public EmployeeBuilder withName(String name) {
+            this.name = name;
+            return this;
+        }
+
+        public EmployeeBuilder withSalary(Double salary) {
+            this.salary = salary;
+            return this;
+        }
+
+        public Employee build() {
+            return new Employee(this);
+        }
     }
 
 }

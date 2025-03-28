@@ -21,7 +21,7 @@ public class FactorialRecursive {
         System.out.println("The factorial of " + number + " is: ");
 
 
-        while(number > 0) {
+        while (number > 0) {
 
             System.out.println(factorial(number));
             number--;
@@ -35,7 +35,7 @@ public class FactorialRecursive {
     }
 
 
-    public static Long factorial(long number){
+    public static Long factorial(long number) {
 
         if (number == 0L) {
             return 1L;
@@ -61,7 +61,7 @@ public class FactorialRecursive {
     public static String swap(String a, int i, int j) {
         char temp;
         char[] charArray = a.toCharArray();
-        temp = charArray[i] ;
+        temp = charArray[i];
         charArray[i] = charArray[j];
         charArray[j] = temp;
         return String.valueOf(charArray);

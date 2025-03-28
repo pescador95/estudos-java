@@ -1,4 +1,4 @@
-package src.desafios;
+package src.bigO;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -24,7 +24,7 @@ public class TwoSum {
             int complement = target - nums[i];
 
             if (map.containsKey(complement)) {
-                return new int[] { map.get(complement), i };
+                return new int[]{map.get(complement), i};
             }
 
             map.put(nums[i], i);

@@ -1,9 +1,14 @@
-package src.desafios;
+package src.bigO;
 
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
 
-import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
@@ -23,8 +28,8 @@ public class CompareTriplets {
         List<Integer> result = compareTriplets(a, b);
 
         bufferedWriter.write(result.stream()
-                        .map(Object::toString)
-                        .collect(joining(" ")));
+                .map(Object::toString)
+                .collect(joining(" ")));
 
         bufferedReader.close();
         bufferedWriter.close();
@@ -47,11 +52,11 @@ public class CompareTriplets {
         for (int i = 0; i < 2; i++) {
 
             if (a.get(i) > b.get(i)) {
-                resultA ++;
+                resultA++;
             }
 
-            if(a.get(i) < b.get(i)) {
-                resultB ++;
+            if (a.get(i) < b.get(i)) {
+                resultB++;
             }
 
         }

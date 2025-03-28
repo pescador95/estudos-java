@@ -1,4 +1,4 @@
-package src.desafios;
+package src.bigO;
 
 import java.util.HashSet;
 import java.util.Set;

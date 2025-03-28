@@ -15,7 +15,7 @@ public class MergeSortedArray {
         int[] arr1 = new int[]{1, 2, 3, 0, 0, 0, 0, 0, 0};
         int[] arr2 = new int[]{2, 5, 6, 7, 8, 9};
 
-        exeute(arr1,arr2);
+        exeute(arr1, arr2);
     }
 
     public static void case2() {

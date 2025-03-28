@@ -1,16 +1,16 @@
-package src.desafios;
+package src.bigO;
 
 import java.util.Scanner;
 
 public class HashCode {
 
-     public static void main(String... args) {
+    public static void main(String... args) {
 
         printValue();
 
     }
 
-    public static void printValue(){
+    public static void printValue() {
 
         Scanner scanner = new Scanner(System.in);
 
